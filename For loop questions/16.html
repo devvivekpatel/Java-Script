@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="pl-4">
+
+    <h2 class="text-lg">#16 Write a C program to display the sum of n terms of even natural numbers.
+    </h2>
+        <p class="text-red-400 "> Expected Output :  <br>The even numbers are :2 4 6 8 <br>
+            The Sum of even Natural Number upto 5 terms : 30
+            </p>
+        <hr>
+            <h1 class="bottom-1 m-auto bg-rose-400 h-16 w-40 text-3xl p-5 font-semibold">OUTPUT</h1>    
+
+    <script>
+        let num = parseInt(prompt("ENter a number to calculate sum of even natural numbers"));
+        let even =0;
+        let sum =0;
+       for(let i=1; i<=num; i++){
+            even+=2;
+        document.write("<br>",even)
+        sum+=even;
+       }
+        document.write(`<br>The sum of first ${num} even number  is : `,sum);
+    </script>
+    
+</body>
+</html>

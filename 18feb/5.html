@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let a =parseInt(prompt("Enter first number...! "));
+        let b = parseInt(prompt("Enter second number ...!"))
+
+        let sum =a+b;
+        let fact=1;
+
+        if(sum==4){
+            for(let i=1; i<=sum; i++){
+                let name = prompt("Enter your all 4 friends name .....!")
+                document.write("<br> Hello ",name);
+            }
+        }
+        else{
+            for(let i=1; i<=sum; i++){
+                fact*=i;
+            }
+            document.write("YOur factorial is : ",fact);
+
+        }
+    </script>
+    
+</body>
+</html>

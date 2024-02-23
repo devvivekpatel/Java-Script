@@ -1,0 +1,37 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="pl-10">
+   
+    <h2 class="text-lg">#11  Write a program in JS to make such a pattern like a right angle triangle with a number which will repeat a number in a row.
+
+    </h2>
+        <p class="text-red-400 "> Expected Output :  <br> The Pattern like<br>
+            1<br>22<br>333<br>4444</p>
+        <hr class="pl-0">
+            <h1 class="bottom-1 m-auto bg-rose-400 h-16 w-40 text-3xl p-5 font-semibold">OUTPUT</h1>    
+
+    <script>
+
+        let num = parseInt(prompt("Enter a number .....!"))
+        for(let i=1; i<=num; i++){
+            for(let j=1; j<=i; j++){
+                document.write(i);
+            }
+            document.write("<br>");
+        }
+       
+
+    </script>
+
+
+    
+</body>
+</html>

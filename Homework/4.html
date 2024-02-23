@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        let num1 = parseInt(prompt("Enter first number "));
+        let num2 = parseInt(prompt("Enter second number"));
+        let symbol = prompt("Enter symbol (+,-,*,/,%,**) which one calculation you want to perform ?")
+
+        if(symbol=="+"){
+            let num3 = num1 +num2;
+            document.write(`Result of ${num1} ${symbol} ${num2} is : ${num3}`);
+        }
+        
+        else if(symbol=="-"){
+            let num3 = num1 -num2;
+            document.write(`Result of ${num1} ${symbol} ${num2} is : ${num3}`);
+        }
+        else if(symbol=="*"){
+            let num3 = num1 *num2;
+            document.write(`Result of ${num1} ${symbol} ${num2} is : ${num3}`);
+        }
+        else if(symbol=="/"){
+            let num3 = num1 /num2;
+            document.write(`Result of ${num1} ${symbol} ${num2} is : ${num3}`);
+        }
+        else if(symbol=="%"){
+            let num3 = num1 %num2;
+            document.write(`Result of ${num1} ${symbol} ${num2} is : ${num3}`);
+        }
+        else if(symbol=="**"){
+            let num3 = num1 **num2;
+            document.write(`Result of ${num1} ${symbol} ${num2} is : ${num3}`);
+        }
+        else{
+            document.write("You entered wrong symbol ! Sorry ❌")
+        }
+        
+    </script>
+    
+</body>
+</html>

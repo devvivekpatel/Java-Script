@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        let occupation = prompt("Enterr your occupation 👆👆");
+        let price = parseInt(prompt("Enter price of your product $$$"));
+
+
+        switch(true){
+            case (occupation=="teacher"):
+                var discount = (price*10)/100;
+                var totalPrice = price-discount;
+                document.write(`You are a ${occupation} , So you are getting discount of 10% 🤩🤩 on your price : ${price} now you will pay only : ${totalPrice} 🤩`);
+                break;
+
+                case (occupation=="student"):
+                var discount = (price*20)/100;
+                var totalPrice = price-discount;
+                document.write(`You are a ${occupation} , So you are getting discount of 20% 🤩🤩 on your price : ${price} now you will pay only : ${totalPrice} 🤩`);
+                   
+                    break;
+
+                    default:
+                    var discount = (price*4)/100;
+                var totalPrice = price-discount;
+                document.write(`You are a ${occupation} , So you are getting discount of 4% 🤩🤩 on your price : ${price} now you will pay only : ${totalPrice} 🤩`);
+        }
+
+    </script>
+    
+</body>
+</html>

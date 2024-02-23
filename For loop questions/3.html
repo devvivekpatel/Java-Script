@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="pl-10">
+    <h2 class="text-lg">
+      #3 Write a program in Java Script to display n terms of natural numbers
+      and their sum.
+    </h2>
+    <p class="text-red-400">
+      Expected Output : <br />
+      The first 7 natural number is : <br />
+      1 2 3 4 5 6 7
+      <br />
+      The Sum of Natural Number upto 7 terms : 28<br />
+    </p>
+    <hr class="pl-0" />
+    <h1
+      class="bottom-1 m-auto bg-rose-400 h-16 w-40 text-3xl p-5 font-semibold"
+    >
+      OUTPUT
+    </h1>
+
+    <script>
+      let number = parseInt(prompt("Enter a natural number .....!"));
+
+      let sum=0;
+      for(let i=1; i<=number; i++){
+        sum =sum+i;
+        document.write("<br>",i);
+      }
+      document.write("<br>The Sum is : ",sum)
+    </script>
+
+  </body>
+</html>

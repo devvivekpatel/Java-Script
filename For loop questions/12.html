@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="pl-4">
+    <h2 class="text-lg">#12  Write a program in JS to make such a pattern like a right angle triangle with the number increased by 1.
+
+
+    </h2>
+        <p class="text-red-400 "> Expected Output :  <br> The Pattern like<br>
+            1<br>23<br>456<br>78910</p>
+        <hr class="pl-0">
+            <h1 class="bottom-1 m-auto bg-rose-400 h-16 w-40 text-3xl p-5 font-semibold">OUTPUT</h1>    
+
+    <script>
+        let num = parseInt(prompt("ENter a number.............!"));
+        let z=1;
+
+        for(let i=1; i<=num; i++){
+            for(let j=1; j<=i; j++){
+                
+                document.write(`${z} `);
+                z++;
+            }
+            document.write("<br>");
+        }
+    </script>
+    
+</body>
+</html>

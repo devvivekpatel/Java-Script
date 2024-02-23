@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="pl-4">
+
+    <h2 class="text-lg">#15   Write a JS program to calculate the factorial of a given number.  </h2>
+        <p class="text-red-400 "> Expected Output :  <br> The Factorial of 5 is: 120</p>
+        <hr>
+            <h1 class="bottom-1 m-auto bg-rose-400 h-16 w-40 text-3xl p-5 font-semibold">OUTPUT</h1>    
+
+    <script>
+        let num = parseInt(prompt("ENter a number to calculate factorial!"));
+        let z=1;
+
+        for(let i=1; i<=num; i++){
+            z=z*i;
+        }
+        document.write(`<br>The factorial of ${num} is : `,z);
+    </script>
+    
+</body>
+</html>

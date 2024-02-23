@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+alert("We are checking for a triangle if you have then click ok 👍")
+
+let first = parseInt(prompt("Enter your first side 📐📉"));
+let second = parseInt(prompt("Enter your second side 📐📉"));
+let third = parseInt(prompt("Enter your third side 📐📉"));
+
+
+document.write("You have entered these below sides  🤐");
+document.write("<br>Your first side is : ",first)
+document.write("<br>Your second side is : ",second)
+document.write("<br>Your third side is : ",third)
+
+if(first+second>third && first+third>second && second+third>first){
+    document.write("<br>Yes, it is a triangle ✅")
+}
+else{
+    document.write("<br>No, it's not a triangle ❌")
+}
+
+    </script>
+    
+</body>
+</html>

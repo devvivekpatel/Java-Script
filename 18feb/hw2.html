@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let num =prompt("Enter a number .......!");
+        let last;
+        document.write(num.length,"<BR>")
+        document.write("Your number is : ",num);
+        document.write("<BR>Your reverse number is :")
+
+        
+        num1 = parseInt(num);
+
+        for (let i=1; i<=num.length; i++){
+            last = num1%10;
+            document.write(last);
+            num1 = parseInt(num1/10);
+
+        }
+       
+  
+    </script>
+    
+</body>
+</html>

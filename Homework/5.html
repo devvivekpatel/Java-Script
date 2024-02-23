@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Questiono :- Create a program to check grade ?🥴
+
+       alert("Note:-This program will take your marks and give you grade...Plese enter your marks correctly👍 ");
+
+       let mathsMarks = parseInt(prompt("Enter marks of maths subject 📋"));
+       let hindiMarks = parseInt(prompt("Enter marks of Hindi subject 📋"));
+       let englishMarks = parseInt(prompt("Enter marks of English subject 📋"));
+       let scienceMarks = parseInt(prompt("Enter marks of Science subject 📋"));
+
+       let total = mathsMarks+ hindiMarks+ englishMarks+ scienceMarks;
+       let percent = total/4;
+
+       document.write("<br>Your total is : ",total,"/400 📋");
+       document.write(`<br>Your percent is : ${percent}% ✍️`);
+
+       if(percent>100 || percent<0){
+        document.write("<br>❌Invalid ❌");
+       }
+       else if(percent<=100 && percent >90){
+        document.write("<br>Your grade is 'S' !Congratulations 🤩🤩🤩🤩🤩🤩 ");
+       }
+       else if(percent<=90 && percent >80){
+        document.write("<br>Your grade is 'A' !Congratulations 🤩🤩🤩 ");
+       }
+       else if(percent<=80 && percent >70){
+        document.write("<br>Your grade is 'B' !Very good ✅ ");
+       }
+       else if(percent<=70 && percent >60){
+        document.write("<br>Your grade is 'C' !Good 👍 ");
+       }
+       else if(percent<=60 && percent >50){
+        document.write("<br>Your grade is 'D' !Not Bad 🥴 ");
+       }
+       else if(percent<=50 && percent >40){
+        document.write("<br>Your grade is 'E' !Poor 🤐🤐");
+       }
+       else{
+        document.write("<br>Sooo Sorry! Don't weep 😭 but you are failed 😭😭");
+       }
+      
+    </script>
+    
+</body>
+</html>
