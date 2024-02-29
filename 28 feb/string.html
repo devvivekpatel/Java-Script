@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+       //non primitive data type padhna hai 
+
+       let a ="Hello";
+       document.write(a[4]);
+       document.write("<BR>",a[0]);
+       document.write("<BR>The length of variable a is : ",a.length);
+        document.write("<BR>")
+
+        for(let i=0; i<a.length; i++){
+            document.write(a[i],"<BR>");
+        }
+
+        //cause it will not change anything
+        a[0] = "A";
+
+        //strings are immutable in js
+        document.write("<BR>",a[0])
+            //For array
+
+            //array is mutable
+            let ab = ['a','p','p','l','e'];
+
+            ab[1] = 'b';
+
+            document.write(ab);
+
+</script>
+</body>
+</html>
