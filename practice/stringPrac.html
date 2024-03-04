@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let name = "    Vikrant Singh Baghel       ";
+
+        document.write("Trim function 💡 <BR>")
+        document.write(name.length,"<BR>");
+        //you must need to store it on another variable
+        nameTrim = name.trim();
+        document.write(nameTrim.length,"<BR>");
+
+            document.write("trimStart function 💡 <BR>")
+        let nameStart = "           Vikrant";
+        document.write(nameStart.length,"<BR>")
+        let nameStartTrim = nameStart.trimStart();
+        document.write(nameStartTrim.length,"<BR>")
+
+            document.write("trimEnd function 💡 <BR>")
+        let nameEnd = "Vikrant         ";
+        document.write(nameEnd.length,"<BR>")
+        let nameEndTrim = nameEnd.trimEnd();
+        document.write(nameEndTrim.length,"<BR>")
+
+    </script>
+</body>
+</html>
