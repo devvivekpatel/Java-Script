@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //indexof
+        //lastindexof
+        //startwith
+        //endwith
+        //includes
+        //repeat
+
+        let name = "vivek";
+
+        let b = name.indexOf("v");
+        document.write(b,"<BR>");
+            document.write(name.lastIndexOf("v"),"<BR>");
+
+      let para = "Hello , this is vivek and vikrant also";
+
+      let check = para.indexOf("vikrant");
+       let check1 = para.indexOf("vivek");
+
+
+      document.write(check,"<BR>");
+      document.write(check1,"<BR>");
+
+        let check2 = para.indexOf('v',20);
+        document.write(check2,"<BR>")
+
+            //it will only  check for start in any string only start it will not care about or anything else even case , it will not check for case
+            let check4 = para.startsWith("H");
+            document.write(check4,"<BR>");
+
+            let check5 = para.endsWith("o");
+            document.write(check5,"<BR>");
+
+                //includes
+
+                let check6 = para.includes("thiso");
+                document.write(check6,"<BR>");
+
+        let name1 = "Vivek ";
+        let check7 = name1.repeat(4);
+        document.write(check7,"<BR>");
+            document.write(name1.length," Length of name1<BR>")
+            document.write(check7.length," Length of check7<BR>");
+
+                let check8 = name1.replace("Vivek ","Vikrant");
+                document.write(check8,"<BR>");
+
+                let new1 = "patel";
+                document.write(new1.concat("vivek"));
+                document.write("<BR>")
+
+                let new2 = "vivvvvvkkkkd";
+                document.write(new2.replaceAll("v","m"));
+
+    </script>
+    
+</body>
+</html>

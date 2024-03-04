@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+
+    for(let i=1; i<=5; i++){
+        for(let j=1; j<=i; j++){
+            document.write(j);
+            
+
+        }
+        document.write("<BR>")
+    }
+
+    document.write("<BR>");
+
+    for(let i=1; i<=5; i++){
+        for(let j=5; j>=i; j--){
+            document.write("* ");
+        }
+        document.write("<BR>")
+    }
+
+    document.write("<BR>");
+
+    for(let i=5; i>=1; i--){
+        for(let j=i; j>=1; j--){
+            document.write("&nbsp");
+        }
+        for(let k=1; k<=5; k++){
+            document.write("*");
+        }
+        document.write("<BR>");
+    }
+
+    document.write("<BR>");
+
+        //and her is magic bruh 😀
+
+    for(let i=1; i<=5; i++){
+        for(let j=5; j>i; j--){
+            document.write("&nbsp")
+        }
+        for(let k=1; k<=i; k++){
+            document.write("*")
+        }
+        document.write("<BR>")
+    }
+
+    document.write("<BR>")
+
+        for(let i=1; i<=5; i++){
+        for(let j=5; j>i; j--){
+            document.write("&nbsp ")
+        }
+        for(let k=1; k<=i; k++){
+            document.write("*")
+        }
+        document.write("<BR>")
+    }
+    document.write("<BR>");
+
+    for(let i=5; i>=1; i--){
+        for(let j=5; j>i; j--){
+            document.write("&nbsp");
+        }
+        for(let k=i; k>=1; k--){
+            document.write("*");
+        }
+        document.write("<BR>")
+    }
+
+    document.write("<BR>")
+
+    //again you will see magic bruh  both code are same difference only in a single space 😀
+
+    
+// *****
+//  ****
+//   ***
+//    **
+//     *
+
+    for(let i=5; i>=1; i--){
+        for(let j=5; j>i; j--){
+            document.write("&nbsp ");
+        }
+        for(let k=i; k>=1; k--){
+            document.write("*");
+        }
+        document.write("<BR>")
+    }
+
+    document.write("<br>")
+
+    let num ="1234567778";
+
+    // let count=1;
+    // while(num.length>0){
+
+    //     let rem = num%10;
+    //     document.write(rem);
+    //     num = num/10;
+    //     count++;
+    // }
+
+    let len = num.length;
+    for(let i=1; i<=len; i++){
+        let rem = num%10;
+        document.write(rem);
+        num = parseInt(num/10);
+    }
+
+    // <script>
+    //     let num =prompt("Enter a number .......!");
+    //     let last;
+    //     document.write(num.length,"<BR>")
+    //     document.write("Your number is : ",num);
+    //     document.write("<BR>Your reverse number is :")
+
+        
+    //     num1 = parseInt(num);
+
+    //     for (let i=1; i<=num.length; i++){
+    //         last = num1%10;
+    //         document.write(last);
+    //         num1 = parseInt(num1/10);
+
+    //     }
+       
+  
+    // </script>
+</script>
+    
+</body>
+</html>
