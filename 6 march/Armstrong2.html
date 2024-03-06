@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let num =prompt("Enter a number to check for armstrong number 💡💡💡");
+        let num1=num;
+        let len =num.length;
+        let c=0;
+
+        while(num!=0){
+            let check = num%10;
+            let pow = check**len;
+            c=c+pow;
+            num = parseInt(num/10);
+        }
+        document.write(c,"<BR>");
+
+         
+       if(c==num1){
+        document.write("YEs ✅ , it's an armstrong number: ",num1,"<BR>");
+       }
+       else{
+        document.write("<BR>No ❌,it's not ");
+       }
+
+       
+
+    </script>
+    
+</body>
+</html>
