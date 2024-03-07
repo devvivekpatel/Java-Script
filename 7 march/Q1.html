@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //count vowels in given string 
+
+        let str = prompt("Please enter a string 🫶🫶");
+        let count =0;
+
+        for(let i=0; i<str.length; i++){
+
+            if(str[i] == 'a' || str[i] == 'e' ||str[i] == 'i' || str[i] == 'o' ||str[i] == 'u' || str[i] == 'A' || str[i] == 'E' || str[i] == 'I' || str[i] == 'O' || str[i] == 'U'){
+                
+                //make sure that you are not using more than one assignment operator together like you can't write count = count++ because count = count = count+1 that's why;         💡💡
+                count++;
+            }
+
+        }
+        document.write("There are : ",count," vowels in given string 👍👍");
+    </script>
+    
+</body>
+</html>
