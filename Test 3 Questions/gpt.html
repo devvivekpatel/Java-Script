@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // const rows = 5;
+
+// for (let i = 0; i < rows; i++) {
+//     let row = '';
+//     // Add spaces before the '*' characters
+//     for (let j = 0; j < i; j++) {
+//         row += ' ';
+//     }
+//     // Add the '*' characters
+//     for (let k = 0; k < rows - i; k++) {
+//         row += '*';
+//     }
+//     console.log(row);
+// }
+
+// for (let i = 0; i < rows; i++) {
+//     let row = '';
+//     // Add spaces before the '*' characters
+//     for (let j = 0; j < i; j++) {
+//         row += ' ';
+//     }
+//     // Add the '*' characters
+//     for (let k = 0; k < rows - i; k++) {
+//         row += '*';
+//         document.write(row);
+//     }
+//     document.write("<BR>")
+// }
+//   
+
+const rows = 5;
+
+for (let i = 0; i < rows; i++) {
+    let row = '';
+    // Add spaces before the '*' characters
+    for (let j = 0; j < i; j++) {
+        row += '&nbsp;';
+    }
+    // Add the '*' characters
+    for (let k = 0; k < rows - i; k++) {
+        row += '*';
+    }
+    document.write(row + '<br>');
+}
+</script>
+</body>
+</html>
