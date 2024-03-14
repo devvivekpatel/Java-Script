@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let ar = [3,7,6,4,9,12];
+        let ar1 =[];
+        console.log(ar1.length);
+
+        for(let i=0; i<ar.length; i++){
+            for(let j=i+1; j<ar.length; j++){
+                if(ar[i]+ar[j]==15){
+                    ar1.push(ar[i]);
+                    ar1.push(ar[j]);
+                }
+            }
+        }
+        document.write("<BR>");
+        document.write(ar1);
+        console.log(ar1.length);
+    </script>
+    
+</body>
+</html>

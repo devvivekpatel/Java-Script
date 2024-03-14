@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        
+        let num= [5,8,4,3,2,1];
+        let temp;
+
+        for(let i=0; i<num.length; i++){
+            for(let j=i+1; j<num.length; j++){
+                if(num[i]>num[j]){
+                    temp = num[i];
+                    num[i] = num[j];
+                    num[j] = temp;
+                    document.write("<BR>temps is : ",temp);
+                }
+              
+            }
+        }
+        document.write("<BR>")
+        document.write("<BR>")
+        document.write(num);
+    </script>
+</body>
+</html>

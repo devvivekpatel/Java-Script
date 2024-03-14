@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //here are 2 ways to declare an array ✅
+
+         let cars = new Array("volvo","Maruti","Bmw",7);
+         document.write(cars[3],"<BR>");
+         document.write(typeof(cars));
+         //isArray function is used to check an array is array or not 💡💡
+         document.write("<BR>",Array.isArray(cars));
+
+         //typeof will return object , cause arrays typeof is object 🥴
+
+         let names = ["Rahul","Vivek","Ram","Gagan","Vikrant"];
+         document.write("<BR>",typeof(names));
+
+        //Undefined array with 40 elements
+        let names1 = new Array(40);
+        document.write("<BR>",names1[4]);
+        names1[0] =5;
+        document.write("<BR> The value of names1[0] is : ",names1[0]);
+        document.write("<BR>",names1.length);
+
+        //fruits instanceof Array;
+        const points = new Array();
+        const points1 = [];
+        document.write("<BR> Use of fruits instanceof Array 🥴🥴🥴");
+        document.write("<BR>",points instanceof Array);
+        document.write("<BR>",names instanceof Array);
+    </script>
+    
+</body>
+</html>
