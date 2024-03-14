@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //at()  💡
+        document.write("<BR> at() 💡")
+        let student = ["Ram",9989999,9.7,"male"];
+        document.write("<BR>",student);
+        document.write("<BR>",student.at(0));
+        document.write("<BR>")
+
+        //pop()  💡
+        document.write("<BR> pop() 💡")
+        //pop returns popped value 
+        document.write("<BR>",student.pop());
+        document.write("<BR>",student.at(2));
+        document.write("<BR>",student.length);
+        document.write("<BR>");
+
+        //push()  💡
+        //push returns index value of pushed place 
+        document.write("<BR> push() 💡")
+        document.write("<BR>",student.push("female"));
+        document.write("<BR>",student.length);
+        document.write("<BR>",student.push("male"));
+        document.write("<BR>");
+
+        //slice()  💡
+        //it will return whole array because you given single index --single array used as starting index from where value should given 
+        document.write("<BR> slice()    💡<BR> ")
+        document.write(student.slice(0),"<BR>");
+        //two elements
+        document.write(student.slice(2,3),"<BR>");
+
+
+    </script>
+    
+</body>
+</html>
