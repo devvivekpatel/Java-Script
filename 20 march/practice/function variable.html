@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //All about function variable 💡💡
+
+        let a = 0;
+
+        function sum(c,b){
+            console.log(a);
+            console.log(b);
+        }
+
+        console.log(a);
+        document.write(sum(7,8));
+        console.log(sum(5,a));
+
+        //💡💡💡 As you can see you can easily access name variable even name is declared outside the function 💡💡
+        let name = "Mohan";
+        function greet(a){
+            document.write("<BR>My name is ",name , " and age is : ",a);
+            console.log(name);
+            console.log(a);
+            return name;
+        }
+         greet(4);
+         let check = greet(5);
+         console.log(check);
+         
+    </script>
+    
+</body>
+</html>

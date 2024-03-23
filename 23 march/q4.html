@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        //this program will take array from users of their ages after that it will check for 18 or above 
+
+let users = parseInt(prompt("Enter number of users"));
+let ar=[];
+let ar1 =[];
+
+function check(users,ar,ar1){
+
+    let i=0;
+    while(i!=users){
+        ar[i] = parseInt(prompt("Enter your age "));
+        i++;
+        
+    }
+    
+
+
+    for(let i=0; i<ar.length; i++){
+        if(ar[i]>=18){
+            let n=0;
+           ar1.push(ar[i]);
+           n++;
+        }
+    }
+    console.log(ar);
+  
+
+    return ar1;
+}
+
+let ans = check(users,ar,ar1);
+document.write(ans);
+
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+
+        //Below code is not working  , I was trying something new...........❌❌❌❌❌
+        // let num = number(1);
+        // let text = console.log("My number is : ",num);
+        // document.write("My number is : ",num);
+
+        //💡💡💡 it will not execute after reaching at return ......💡💡💡
+
+        function sum(a,b){
+            return a+b;
+            document.write("HELLO");
+            console.log("HELOO");
+        }
+
+
+        let result1=sum;                  //💡💡
+        let result = sum(4,5);
+        document.write(result)
+        console.log(result);
+        document.write("<BR>It will return whole function : ",result1)
+        console.log(result1);
+
+        //below will produce NaN remember ..💡
+        let result2 = sum();
+        document.write("<br>sum(): ",result2)
+        console.log(result2)
+
+
+
+        
+    </script>
+    
+</body>
+</html>
