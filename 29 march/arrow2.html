@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        //find max in array
+        let ar = [];
+        let len = parseInt(prompt("Enter length of array "));
+
+        for(let i=0; i<len; i++){
+
+           // ar[i] = parseInt(prompt("Enter a number",i));  // 💡💡 it will pass i as a parameter
+            ar[i] = parseInt(prompt(`Enter value of index number ${i} `));
+        }
+        document.write(ar);
+
+        let max = (ar)=>{
+            let check = ar[0];
+
+            for(let i=0; i<ar.length; i++){
+              
+                if(check<ar[i]){
+                    check = ar[i];
+                }
+            }
+            document.write("<BR>Max number is : ",check) ;
+        }
+        max(ar);
+      
+    </script>
+</body>
+</html>
