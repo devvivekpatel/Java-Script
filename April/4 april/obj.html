@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let student = {
+            name: "Gagan",
+            age: 30,
+            number:1234567,
+            university: "APS"
+        }
+
+        document.write(student)
+        // Another  ways to accessing value of a key💡💡💡
+        document.write("<BR> Here is name 🥴 : ",student.name)
+        document.write("<BR> Here is age 🥴 : ",student["age"])
+        console.log(student);
+
+        //remember 💡💡💡 key is representing key of an object and student[key] is value of that object
+        for(let key in student){
+            document.write("<BR>",key, " is:  ",student[key]);
+        }
+        for(let key in student){
+            console.log(key, " is:  ",student[key]);
+        }
+    </script>
+</body>
+</html>
