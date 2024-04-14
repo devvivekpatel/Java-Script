@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .container{
+        height: 150vh;
+        width: 90vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+   
+    .content{
+        position: fixed;
+        font-size: 20px;
+        
+    }
+
+</style>
+<body>
+    <!--Q4. Develop a script that changes the font size of a paragraph when the user scrolls the mouse wheel over it. 🥴🥴 -->
+
+    <div class="container">
+     
+         <h1 class="content">Hii, This is Me . 😀</h1>
+       
+    </div>
+    <script>
+
+let para = document.getElementsByClassName('content');
+window.addEventListener('scroll', () =>{
+    let win = document.window.scrollY;
+    para.style.fontsize = '100px';
+})
+    </script>
+    
+</body>
+</html>

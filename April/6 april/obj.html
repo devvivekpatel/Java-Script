@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //object with functio 💡💡💡💡
+
+        let marks = {
+            hindi: 70,
+            english: 60,
+            maths: 80,
+            science:56,
+            //return is necessary 💡💡
+            total : function (){
+
+                // document.write("Hello world, Hey");
+                // return hindi;
+                let sum= this.hindi + this.english +this.maths+this.science;
+               //As you can see 💡💡💡
+                return `Your total is : ${sum}`;
+            }
+        }
+
+        for(let key in marks){
+            if(key != "total"){
+                document.write(key ," value is : ", marks[key],"<BR>");
+            }
+          
+        }
+        console.log(marks);
+        console.log(marks["science"]);
+        document.write(marks.total());
+    </script>
+    
+</body>
+</html>
