@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+      .container{
+        height: 100vh;
+        width:90vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .box{
+        padding: 10px;
+        height: 250px;
+        width: 250px;
+        border-radius: 10px;
+        border:2px solid black
+        
+       /* text-align: center; */
+
+    }
+</style>
+<body>
+    <!--  Q.2 Write a script that triggers an alert message when the user hovers over a specific element on the page.    🥴🥴
+ -->
+ <div class="container">
+<div class="box" id="box" onmouseover="check()">
+    <h1 id="sms">Just don't hover Me ❌❌</h1>
+</div>    
+ </div>
+ <script>
+    // it is not working 💡💡💡🤐
+//     let box = document.getElementsById('box');
+//     box.addEventListener('onmouseover', function handleClick() {
+//       alert("What are you doing ? 🤐🤐");
+// });
+
+function check(){
+    alert("What are you doing ? 🤐🤐");
+}
+ </script>
+    
+</body>
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        background-color: black;
+    }
+   .container{
+        height: 100vh;
+        width:90vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        gap:10px;
+    }
+    .box{
+        padding: 10px;
+        height: 400px;
+        width: 400px;
+        border-radius: 10px;
+        /* border:2px solid black; */
+      
+        
+       /* text-align: center; */
+
+    }
+    .box img{
+        height: 100%;
+        width: 100%;
+        border-radius: 10px;
+    }
+    .btn{
+        height: 30px;
+        width: 100px;
+        margin: 10px;
+        padding: 5px;
+        border-radius: 3px;
+        background-color: rgb(66, 105, 222);
+       
+    }
+    .box1{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+</style>
+<body>
+    <!-- Q.3 Build a slideshow functionality using JavaScript events, where clicking on next and previous buttons switches between different images. 🥴🥴
+ -->
+ <div class="container">
+    <div class="box">
+        <img src="img/hulk (1).jpeg" alt="" id="img">
+    </div>
+    <div class="box1">
+        <button class="btn" id="btn1" onclick="spider()">NEXT</button>
+        <button class="btn" id="btn2" onclick="hulk()">PREV</button>
+    </div>
+ </div>
+
+
+   
+    <script>
+
+function spider(){
+    
+    document.getElementById('img').src = 'img/hulk (2).jpeg';
+
+}
+ function hulk(){
+    document.getElementById('img').src = 'img/hulk (1).jpeg';
+
+
+ }
+    </script>
+    
+</body>
+</html>
