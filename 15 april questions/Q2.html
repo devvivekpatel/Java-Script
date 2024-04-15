@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="number" id="num">
+    <button id="btn" onclick="check()">After pin Press Me 👍</button>
+
+    <script>
+
+        alert("if you entered wrong pin 3 times continue , you wll definetely face problem 🥴🥴");
+
+       var attempt =0;
+        function check(){
+
+        const pass = 9977;
+
+       
+
+        let pin = document.getElementById('num').value;
+
+        if(attempt<3){
+            if(pin == pass){
+                alert("YOu logged in ✅")
+                console.log("You logged in ");
+                attempt =0;
+            }
+            else{
+                alert("Try again 🤐");
+                console.log("Try again");
+            }
+            attempt++;
+
+        }
+        else{
+            alert("Try after few hours ❌❌");
+            console.log("Try after few hours , you have already attempt 3 times ❌❌");
+        }
+        console.log(attempt)
+
+    }
+    </script>
+    
+</body>
+</html>
