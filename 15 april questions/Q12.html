@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 12. Write a function to calculate the average of all numbers in an array 😑 -->
+    <script>
+        let ar = [50,60,40,10,100,30];
+
+       function average(ar){
+
+            let num = ar.length;
+            let total =0;
+
+            for(let i=0; i<ar.length; i++){
+                total += ar[i]
+            }
+            document.write("Your total is ✅ : ",total)
+            let avg = total/num;
+            return avg;
+
+        }
+      
+        document.write("<BR>So, Your avegage is ✅: ",average(ar));
+    </script>
+</body>
+</html>

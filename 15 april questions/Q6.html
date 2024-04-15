@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 6. Write a function to convert each string in an array to uppercase. 😑 -->
+    <script>
+        // #doubt  💡💡💡
+        let ar = ["abcde","vivek","patel","vikrant","tiger","shudhanshu","bumrah","pandya","dhoni"];
+        document.write(ar,"<BR><BR>");
+            document.write("After converting each string in uppercase 🫶 <BR><BR>");
+
+        // function rev(a){
+        //     let ar1 = [];
+
+        //     for(let i=0 ; i<a.length; i++){
+        //         a[i].toUpperCase();
+        //         console.log(a[i]);
+
+        //         ar1.push(a[i]);
+        //     }
+        //     document.write(ar1);
+        // }
+
+        // rev(ar);
+       
+                 
+let uppercase = ar.map(element => element.toUpperCase());
+document.write(uppercase);
+
+    </script>
+    
+</body>
+</html>

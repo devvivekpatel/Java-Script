@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 7. Write a function to reverse each string in an array. 😑 -->
+
+    <script>
+        let ar = ["abcde","vivek","patel","vikrant","tiger","shudhanshu","bumrah","pandya","dhoni"];
+        document.write(ar,"<BR><BR>");
+            document.write("After reversing each string 🫶 <BR><BR>");
+
+        function rev(a){
+            let ar1 = [];
+
+            for(let i=0 ; i<a.length; i++){
+                let check = "";
+                for(let j = a[i].length -1; j>=0; j--){
+                  check += a[i][j];
+                }
+                ar1.push(check);
+            }
+            document.write(ar1);
+        }
+
+        rev(ar);
+
+    </script>
+    
+</body>
+</html>
