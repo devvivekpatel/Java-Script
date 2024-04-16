@@ -8,28 +8,34 @@
 <body>
     <!-- 6. Write a function to convert each string in an array to uppercase. 😑 -->
     <script>
-        // #doubt  💡💡💡
+        // #workingonthis  💡💡💡
+        
         let ar = ["abcde","vivek","patel","vikrant","tiger","shudhanshu","bumrah","pandya","dhoni"];
         document.write(ar,"<BR><BR>");
             document.write("After converting each string in uppercase 🫶 <BR><BR>");
 
-        // function rev(a){
-        //     let ar1 = [];
 
-        //     for(let i=0 ; i<a.length; i++){
-        //         a[i].toUpperCase();
-        //         console.log(a[i]);
+                function upper(a){
+                    let ar1 = [];
+                    ar1 = a;
+                    for(let i=0; i<a.length; i++){
+                        let j=a[i][0].toUpperCase();
+                        ar1[i][0] = j;
+                        // console.log(a[i][0].toUpperCase());
+                    }
+                    document.write(ar1);
+                }
+                upper(ar);
+               
+// let ar1 = [];
 
-        //         ar1.push(a[i]);
-        //     }
-        //     document.write(ar1);
-        // }
+// for(let i=0 ; i<ar.length; i++){
+//     // ar[i].toUpperCase();
+//     console.log(ar[i][0].toUpperCase());
 
-        // rev(ar);
-       
-                 
-let uppercase = ar.map(element => element.toUpperCase());
-document.write(uppercase);
+//     // ar1.push(a[i]);
+// }
+// // document.write(ar1);s 
 
     </script>
     
