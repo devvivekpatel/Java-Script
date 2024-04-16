@@ -7,7 +7,27 @@
 </head>
 <body>
     <script>
-        
+        alert("Please enter details currectly ....😑👍");
+       let obj = {};
+       let name = prompt("Enter Your name");
+       document.write(`Hello , ${name} 🙋‍♂️ <BR> Your marks .....✅<BR>`);
+       obj.hindi = parseInt(prompt("Enter your marks of hindi subject .....🔴"));
+       obj.english = parseInt(prompt("Enter your marks of hindi subject .....🔴"));
+       obj.maths = parseInt(prompt("Enter your marks of hindi subject .....🔴"));
+       obj.science = parseInt(prompt("Enter your marks of hindi subject .....🔴"));
+
+       let total = obj.hindi+obj.english+obj.maths+obj.science;
+
+       let percent = (total*100)/400;
+       console.log(total)
+       console.log(percent);
+
+      for (const key in obj) {
+       document.write(`<BR>You got : ${obj[key]}  in ${key}   ` );
+      }
+
+      document.write(`<BR><BR>Your total is : ${total} out of 400 ✍️`);
+      document.write(`<BR><BR>Your percent is : ${percent} %  ✍️`);
     </script>
     
 </body>

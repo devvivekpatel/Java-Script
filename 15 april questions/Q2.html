@@ -7,18 +7,16 @@
 </head>
 <body>
     <input type="number" id="num">
-    <button id="btn" onclick="check()">After pin Press Me 👍</button>
+    <button id="btn" onclick="check(pass)">After pin Press Me 👍</button>
 
     <script>
+           const pass = parseInt(prompt("Enter your original pin ✅✅"));
 
         alert("if you entered wrong pin 3 times continue , you wll definetely face problem 🥴🥴");
 
        var attempt =0;
-        function check(){
+        function check(pass){
 
-        const pass = 9977;
-
-       
 
         let pin = document.getElementById('num').value;
 
